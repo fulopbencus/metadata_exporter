@@ -10,13 +10,13 @@ It counts the 200's responses in the body trough a HTTP GET method.
 
 For the pre-built image, pull from ![ ](assets/github_icon.png "Github icon") :
 ```bash
-docker pull fulopbence/metadata_exporter:latest
+docker pull fulopbence/metadata-exporter:latest
 ```
 
 Then run with the following command:
 
 ```bash
-docker run -d -p 9091:9091 --name=metadata_exporter metadata-exporter -url <your_url>
+docker run -d -p 9091:9091 --name=metadata_exporter fulopbence/metadata-exporter:latest -url <your_url>
 ```
 
 ## To build your own image from the Dockerfile
